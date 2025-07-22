@@ -6,11 +6,13 @@ document.getElementById("scrape").addEventListener("click", async () => {
   const status = document.getElementById("status");
   const loader = document.getElementById("loader");
 
+  const backendURL = "https://scoutai-backend.onrender.com"; //  UPDATE HERE
+
   status.textContent = "Initializing...";
   loader.style.display = "block";
 
   try {
-    const res = await fetch("http://localhost:8000/scrape", {
+    const res = await fetch(`${backendURL}/scrape`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ url, city, mode })
@@ -18,16 +20,16 @@ document.getElementById("scrape").addEventListener("click", async () => {
 
     const json = await res.json();
 
-    status.textContent = "✅ " + json.details;
+    status.textContent = " " + json.details;
     loader.style.display = "none";
 
-    // Trigger download
+    // Trigger download after 1s
     setTimeout(() => {
-      window.open("http://localhost:8000/download", "_blank");
+      window.open(`${backendURL}/download`, "_blank");
     }, 1000);
 
   } catch (err) {
     loader.style.display = "none";
-    status.textContent = "❌ Connection failed. Is the backend running?";
+    status.textContent = " Connection failed. Is the backend running?";
   }
 });
