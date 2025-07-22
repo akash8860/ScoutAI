@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual environment
+env/
+venv/
+scraperenv/
+.env
+
+# Output data
+*.xlsx
+*.json
+output/
+status.json
+history.json
+users.json
+
+# VSCode and system files
+.vscode/
+.DS_Store

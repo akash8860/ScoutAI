@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+  padding: 12px;
+  width: 300px;
+}
+input, select, button {
+  margin: 6px 0;
+  width: 100%;
+  padding: 8px;
+}
+button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
