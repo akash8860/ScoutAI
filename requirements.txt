@@ -1,6 +1,6 @@
 fastapi==0.95.2            # Last compatible version with Pydantic 1.x
 uvicorn==0.22.0
-pydantic==1.10.13          # Avoid Rust-based build
+pydantic==1.10.13       # Avoid Rust-based build
 playwright==1.43.0
 selenium==4.21.0
 openpyxl==3.1.2
