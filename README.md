@@ -1,5 +1,10 @@
 # 🧠 ScoutAI
 
+[![Sponsor ScoutAI](https://img.shields.io/badge/Sponsor-ScoutAI-brightgreen)](https://github.com/sponsors/akash8860)
+
+💡 ScoutAI is free and open-source. If you’d like priority support or tailored scraping, check our [Subscription Plans](SUBSCRIPTIONS.md).
+
+
 **ScoutAI** is an AI-enhanced, modular web scraping framework built with **FastAPI** and **Playwright**, offering a dual interface: a RESTful API backend and a Chrome extension frontend. It is purpose-built for structured data extraction from dynamic real estate websites like Housing.com, MagicBricks, and SquareYards.
 
 > 🧩 Key Innovation: A plug-and-play scraping engine that adapts to various DOM structures, with fallback strategies and modular strategies per platform.
